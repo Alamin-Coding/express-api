@@ -8,7 +8,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(
 	cors({
-		origin: ["*", "https://express-api-hk9b.onrender.com"],
+		origin: ["*", "https://express-api-hk9b.onrender.com", "http://localhost:5174", "http://localhost:5173"],
 		methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 		preflightContinue: false,
 		optionsSuccessStatus: 204,
